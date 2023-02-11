@@ -26,56 +26,75 @@ public:
 };
 
 // } Driver Code Ends
-class Solution
-{
-public:
-     int getMinimumDays(int N, string S, vector<int> &P)
-     {
-          // code here
-          int k=0;
-          vector<int>::iterator itr;
+// class Solution
+// {
+// public:
+//      int getMinimumDays(int N, string S, vector<int> &P)
+//      {
+//           // code here
+//           int k=0;
+//           vector<int>::iterator itr;
 
-          for (int i=0; i<N; i++)
-          {
-               if (S[i]!='?' && S[i]==S[i+1])
-               {
-                    S[P[i]]='?';
-                    k+=1;
-               }
-          }
+//           for (int i=0; i<N; i++)
+//           {
+//                if (S[i]!='?' && S[i]==S[i+1])
+//                {
+//                     S[P[k]]='?';
+//                     k+=1;
+//                }
+//           }
 
-          for (itr=P.begin(); itr!=P.end(); itr++)
-          {
-               cout<<*itr<<" ";
-          }
-          cout<<endl;
+//           for (itr=P.begin(); itr!=P.end(); itr++)
+//           {
+//                cout<<*itr<<" ";
+//           }
+//           cout<<endl;
           
-          return k-1;
-     }
+//           return k-1;
+//      }
+// };
+
+class Solution {
+  public:
+    int getMinimumDays(int N,string S, vector<int> &P) {
+        // code here
+         int j=0;
+
+        for(int i=0;i<N;i++)
+
+        {
+
+            while(S[i]==S[i+1]&&S[i]!='?'){
+
+                S[P[j]]='?';
+
+                j++;
+
+            }
+
+        }
+
+        return j;
+    }
 };
 
-//{ Driver Code Starts.
+// Driver Code Starts.
 
 int main()
 {
      int t=1;
-     // scanf("%d ", &t);
+     scanf("%d ", &t);
      while (t--)
      {
 
-          int N=4;
-          // cout<<"Enter N: ";
-          // scanf("%d", &N);
-          // cout<<endl;
-          string S="aabb";
-          // cout<<"Enter String: ";
-          // cin >> S;
-          // cout<<endl;
+          int N;
+          scanf("%d", &N);
+          string S;
+          cin >> S;
 
-          vector<int> P={2, 1, 3, 0};
-          // cout<<"Enter Array: ";
-          // Array::input(P, N);
-          // cout<<endl;
+          vector<int> P;
+          Array::input(P, N);
+          cout<<endl;
 
           Solution obj;
           int res = obj.getMinimumDays(N, S, P);
