@@ -9,33 +9,23 @@ using namespace std;
 
 class Solution{
 public:
-    int inSequence(int A, int B, int C){
-        // code here
-        int n=A+C;
-        int i=1;
-        
-        while (n<=B)
+    int inSequence(int A, int B, int C)
+    {
+        if(C==0)
         {
-            if (n==B)
-            {
-                return i;
-            }
-            
-            n+=C;
-            i++;
+            if(A==B) return true;
+            return false;
+        }
+        if((B<A && C>0)||(B>A && C<0))
+        {
+            return 0;
+        }
+        if((B-A)%C==0)
+        {
+            return 1;
         }
         
         return 0;
-        //     if (n>B)
-        //     {
-        //         return 0;
-        //     }
-        //     else if (n==B)
-        //     {
-        //         return i;
-        //     }
-        //     n=n+C;
-        // }
     }
 };
 
