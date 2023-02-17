@@ -8,14 +8,39 @@ using namespace std;
 //User function Template for C++
 class Solution{
 public:
-    int goodStones(int n, int a[]){
-        // Code here
-        int i=0;
-     while (i<7 && i>=0)
-     {
-          
-     }
+    vector<int>vis;
+    int solve(vector<int>&arr, int i)
+    {
+        if(i>=arr.size() or i<0)
+            return 1;
+            
+        if(vis[i]==0)
+        {
+            return vis[i];
+        }
+        vis[i]=0;
+        vis[i]=solve(arr,i+arr[i]);
         
+        return vis[i];
+    }
+    int goodStones(int n,vector<int> &arr){
+        // Code here
+        vis=vector<int>(n,-1);
+        
+        for(int i=0;i<n; i++)
+        {
+            if(vis[i]==-1)
+            {
+                solve(arr,i);
+            }
+        }
+        int count=0;
+        for(int i=0;i<n; i++)
+        {
+            if(vis[i]==1)count++;
+        }
+        
+        return count;
     }  
 };
 
@@ -23,18 +48,17 @@ public:
 
 int main(){
     
-    int t=1;
-//     cin>>t;
-    while(t--)
-    {
-        int n=7;
-     //    cin>>n;
-        int arr[]={2,3,-1,2,-2,4,1};
-     //    for(int i=0;i<n;i++){
-     //        cin>>arr[i];
-     //    }
-     Solution ob;
-     cout<<ob.goodStones(n,arr)<<endl;
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        vector<int> arr(n);
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        Solution ob;
+        cout<<ob.goodStones(n,arr)<<endl;
     }
     return 0;
 }
