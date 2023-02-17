@@ -9,7 +9,7 @@ using namespace std;
 class Solution{
 public:
     vector<int>vis;
-    int solve(vector<int>&arr, int i)
+    int solve(vector<int>&arr, int i
     {
         if(i>=arr.size() or i<0)
             return 1;
