@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Coding/ISCP",
-      "program": "d:/Coding/ISCP/build/Debug/outDebug",
+      "cwd": "d:/GitHub_Repositories/GFG/ProblemOfTheDay/Old_Problems",
+      "program": "d:/GitHub_Repositories/GFG/ProblemOfTheDay/Old_Problems/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
