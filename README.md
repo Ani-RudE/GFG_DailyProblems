@@ -1,7 +1,5 @@
 # GFG_DailyProblems
 Solutions to "Problem of the Day" that is presented on "Geeks for Geeks" everyday.
-
-My current streak - #8!
 #
 ✅ The file name corresponds to the date on which a particular problem was presented as the "Problem of the Day".
 
