@@ -76,6 +76,6 @@ int main(){
         Solution ob;
         cout<<ob.maxInstance(s)<<endl;
     }
-    return 0;
+    return 0
 }
 // } Driver Code Ends

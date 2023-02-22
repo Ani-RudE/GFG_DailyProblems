@@ -71,7 +71,7 @@ int main(){
             }
         }
         Solution ob;
-        cout << ob.water_flow(mat, n, m) << endl;
+        cout << ob.water_flow(mat, n, m) << endl
         
     }
 }

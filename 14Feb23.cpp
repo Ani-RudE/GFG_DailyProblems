@@ -45,7 +45,7 @@ int main() {
             cin >> colors[i][0] >> colors[i][1] >> colors[i][2];
             
         Solution ob;
-        cout << ob.minCost(colors, n) << endl;    
+        cout << ob.minCost(colors, n) << endl   
     }
 }
 // } Driver Code Ends

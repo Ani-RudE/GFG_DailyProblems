@@ -99,7 +99,7 @@ int main()
           Solution obj;
           int res = obj.getMinimumDays(N, S, P);
 
-          cout << res << endl;
+          cout << res << endl
      }
 }
 
