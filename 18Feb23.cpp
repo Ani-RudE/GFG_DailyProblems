@@ -46,6 +46,6 @@ int main()
         Solution ob;
         cout << ob.appleSequences(N, M, arr) << endl;
     }
-    return 0
+    return 0; 
 } 
 // } Driver Code Ends

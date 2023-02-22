@@ -39,7 +39,7 @@ int main()
         Solution ob;
         cout << ob.countPaths(N) << endl;
     }
-    return 0
+    return 0; 
 }
 
 // } Driver Code Ends

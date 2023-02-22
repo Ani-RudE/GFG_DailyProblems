@@ -60,6 +60,6 @@ int main(){
         Solution ob;
         cout<<ob.goodStones(n,arr)<<endl;
     }
-    return 0
+    return 0;
 }
 // } Driver Code Ends

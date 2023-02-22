@@ -41,6 +41,6 @@ int main(){
         Solution ob;
         cout<<ob.inSequence(A, B, C)<<endl;
     }
-    return 0
+    return 0;
 }
 // } Driver Code Ends
