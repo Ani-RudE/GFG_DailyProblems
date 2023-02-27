@@ -42,7 +42,14 @@
   "files.associations": {
     "iostream": "cpp",
     "random": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "cctype": "cpp",
+    "cmath": "cpp",
+    "cstddef": "cpp",
+    "cstdlib": "cpp",
+    "ctime": "cpp",
+    "cwchar": "cpp",
+    "ratio": "cpp",
   },
   "C_Cpp_Runner.useAddressSanitizer": false
 }
