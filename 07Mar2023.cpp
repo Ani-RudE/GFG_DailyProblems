@@ -85,6 +85,7 @@ void inOrder(Node *root) {
 
 
 // } Driver Code Ends
+
 /* Tree node structure  used in the program
  struct Node
  {
@@ -96,30 +97,29 @@ class Solution{
   public:
     /*You are required to complete below method */
     int maxLevelSum(Node* root) {
-        // Your code here
-        queue<Node*> q;
-        q.push(root);
-        int res = root->data;
-        while(q.size()) {
-            int n = q.size();
-            int cur = 0;
-            while(n--) {
-                auto cur_node = q.front();
-                q.pop();
-                cur += cur_node->data;
-                if(cur_node->left) {
-                    q.push(cur_node->left);
-                }
-                if(cur_node->right) {
-                    q.push(cur_node->right);
-                }
+        int ans=INT_MIN;
+        int sum=0;
+        queue<pair<Node*,int>> q;
+        q.push({root,0});
+        int level=0;
+        while(!q.empty()){
+            Node* node=q.front().first;
+            int curr=q.front().second;
+            q.pop();
+            if(level==curr) {
+                sum+=node->data;
+            }else{
+                ans=max(ans,sum);
+                sum=node->data;
+                level=curr;
             }
-            res = max(res, cur);
+            if(node->left) q.push({node->left,curr+1});
+            if(node->right) q.push({node->right,curr+1});
         }
-        return res;
+        ans=max(ans,sum);
+        return ans;
     }
 };
-
 
 //{ Driver Code Starts.
 int main() {
