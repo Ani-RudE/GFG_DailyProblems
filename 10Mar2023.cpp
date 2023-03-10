@@ -21,7 +21,6 @@ class Solution {
     	long long int f=a*b*c;
     	long long int g=c*d*e;
     	return max(f,g);
-    	
     }
 };
 
