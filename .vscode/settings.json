@@ -47,5 +47,5 @@
   "C_Cpp_Runner.useAddressSanitizer": false,
   "workbench.editor.showTabs": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
-  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true
 }
