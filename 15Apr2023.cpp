@@ -56,7 +56,7 @@ public:
                     cache[i] = cache[i - 1] + 1;
                }
           }
-          return cache[n - 1];
+          return cache[n - 1]
      }
 };
 
