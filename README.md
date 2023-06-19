@@ -5,7 +5,7 @@ Solutions to "Problem of the Day" that is presented on "Geeks for Geeks" everyda
 
 🟦 Highest Streak - #31!
 
-Current Streak - #2!
+Current Streak - #1!
 #
 ✅ The file name corresponds to the date on which a particular problem was presented as the "Problem of the Day".
 
