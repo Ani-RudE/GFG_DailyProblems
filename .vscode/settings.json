@@ -41,9 +41,10 @@
     "**/.vscode/**"
   ],
   "files.associations": {
-    "iostream": "cpp",
-    "random": "cpp"
-  },
+     "iostream": "cpp",
+     "random": "cpp",
+     "ostream": "cpp"
+},
   "C_Cpp_Runner.useAddressSanitizer": false,
   "workbench.editor.showTabs": true,
   "workbench.editor.enablePreviewFromQuickOpen": true,
