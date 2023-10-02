@@ -25,6 +25,7 @@ public:
                     vis[j] = 1;
                }
           }
+
           int ans = 0;
           for (int i = 1; i <= leaves; i++)
           {
